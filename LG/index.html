@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LG Logo</title>
+        <style>
+            * {
+                margin: 0;
+                border: 0;
+            }
+            .logo-container {
+                background: linear-gradient(135deg, white, #c70851);
+                background-color: #a62f35;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+            .g {
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                border: 10px solid white;
+                border-top: 10px solid transparent;
+                transform: rotateZ(45deg);
+            }
+            .g:after {
+                content: "";
+                display: inline-block;
+                transform: rotateZ(-45deg) translateY(92px) translateX(47px);
+                align-items: center;
+                background: white;
+                width: 70px;
+                height: 10px;
+            }
+            .l-and-dot {
+                display: absolute;
+                transform: translateX(90px) translateY(-160px);
+                width: 30px;
+                height: 95px;
+                border: 10px solid white;
+                border-top: none;
+                border-right: none;
+            }
+            .l-and-dot:before {
+                content: "";
+                transform: translateX(-50px);
+                display: inline-block;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo-container">
+            <div class="g"></div>
+            <div class="l-and-dot"></div>
+        </div>
+    </body>
+</html>
