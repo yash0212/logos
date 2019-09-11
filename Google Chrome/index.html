@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Chrome Logo</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .logo {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .logo::after {
+                box-sizing: border-box;
+                display: block;
+                position: relative;
+                content: "";
+                width: 90px;
+                height: 90px;
+                background-color: #4285f4;
+                top: 28%;
+                left: 28%;
+                border: 9px solid whitesmoke;
+                border-radius: 50%;
+                z-index: 999;
+            }
+            .portion {
+                width: 200px;
+                height: 56px;
+            }
+            .red {
+                background-color: #de4e41;
+                position: absolute;
+                left: 60px;
+            }
+            .red::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 87px;
+                height: 25px;
+                background: linear-gradient(
+                    165deg,
+                    rgba(0, 0, 0, 0.07) 50%,
+                    transparent 50%
+                );
+                transform: rotate(-120deg);
+                top: 63px;
+                left: -54px;
+            }
+            .red::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 150px;
+                height: 70px;
+                background: #de4e41;
+                transform: rotateZ(60deg);
+                top: 6px;
+                left: -80px;
+            }
+            .yellow {
+                background-color: #fdc83e;
+                position: absolute;
+                transform: rotateZ(120deg);
+                top: 160px;
+                left: 34px;
+            }
+            .yellow::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 150px;
+                height: 63px;
+                background: #fdc83e;
+                transform: rotateZ(60deg);
+                top: 11px;
+                left: -83px;
+            }
+            .yellow::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 87px;
+                height: 25px;
+                background: linear-gradient(
+                    165deg,
+                    rgba(0, 0, 0, 0.07) 50%,
+                    transparent 50%
+                );
+                transform: rotate(-120deg);
+                top: 64px;
+                left: -54px;
+            }
+            .green {
+                background-color: #4aa562;
+                position: absolute;
+                transform: rotateZ(240deg);
+                top: 86px;
+                left: -75px;
+            }
+            .green::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 130px;
+                height: 64px;
+                background: #4aa562;
+                transform: rotateZ(60deg);
+                top: 20px;
+                left: -34px;
+            }
+            .green::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 88px;
+                height: 25px;
+                background: linear-gradient(
+                    165deg,
+                    rgba(0, 0, 0, 0.07) 50%,
+                    transparent 50%
+                );
+                top: 65px;
+                left: -21px;
+                transform: rotate(-120deg)
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <div class="red portion"></div>
+            <div class="yellow portion"></div>
+            <div class="green portion"></div>
+        </div>
+    </body>
+</html>
