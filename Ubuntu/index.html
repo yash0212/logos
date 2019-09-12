@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                /* box-sizing: border-box; */
+            }
+            .outer {
+                display: flex;
+                width: 200px;
+                height: 200px;
+                background-color: #dd4814;
+                border-radius: 50%;
+                overflow: hidden;
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+            }
+            .inner-ring {
+                width: 85px;
+                height: 85px;
+                position: absolute;
+                border-radius: 50%;
+                border: 17px solid white;
+            }
+            .bar {
+                width: 140px;
+                height: 7px;
+                position: absolute;
+                left: 50%;
+                background-color: aqua;
+                background-color: #dd4814;
+            }
+            .bar::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 140px;
+                height: 7px;
+                background-color: green;
+                background-color: #dd4814;
+                transform-origin: 0% 50%;
+                transform: rotate(120deg);
+            }
+            .bar::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 140px;
+                height: 7px;
+                background-color: blue;
+                background-color: #dd4814;
+                transform-origin: 0% 50%;
+                transform: rotate(240deg);
+            }
+            .dots {
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                border: 5px solid #dd4814;
+                border-radius: 50%;
+                background-color: white;
+                top: 24px;
+                right: 44px;
+            }
+            .dots:before {
+                content: "";
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                border: 5px solid #dd4814;
+                border-radius: 50%;
+                background-color: white;
+                top: 112px;
+                right:-2px;
+            }
+            .dots:after {
+                content: "";
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                border: 5px solid #dd4814;
+                border-radius: 50%;
+                background-color: white;
+                top: 53px;
+                left: -113px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner-ring"></div>
+            <div class="bar"></div>
+            <div class="dots"></div>
+        </div>
+    </body>
+</html>
